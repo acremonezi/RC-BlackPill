@@ -1,0 +1,17 @@
+{
+	"folders": [
+		// {
+		// 	"name": "RC-BlackPill",
+		// 	"path": "."
+		// },
+		{
+			"name": "Transmitter",
+			"path": "Transmitter"
+		},
+		{
+			"name": "Receiver",
+			"path": "Receiver"
+		}
+	],
+	"settings": {}
+}
