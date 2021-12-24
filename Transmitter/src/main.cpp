@@ -1,14 +1,30 @@
-#include <Arduino.h>
+/*
+Welcome!
+A powerful and fully customizable DIY Open Source Arduino Remote
+Controller powered by BlackPill STM32F411CE microcontroller.
+
+This is complete project with Electronics, Software and 3D Printed Case.
+All you need is basic knowledge and willpower.
+Please, Enjoy it and have fun!
+
+Sources at: https://github.com/acremonezi/RC-BlackPill/
+Created at: 12th of December, 2021. (In Brazil)
+Author: Alcides Cremonezi
+*/
+
+#include "main.h"             // Load Libraries
 
 void setup() {
 
-    pinMode(LED_BUILTIN, OUTPUT);
+  Serial.begin(9600);         // Start Serial Communication  
+  pinSetup();                 // Pin I/O Mode Setup
+  radioSetup();               // Radio Setup
+
 }
 
 void loop() {
 
-  digitalWrite(LED_BUILTIN, HIGH);   
-  delay(100);                       
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(1000); 
+  testBlink();              // Blink Code
+  radioComm();              // Radio Communication
+
 }
