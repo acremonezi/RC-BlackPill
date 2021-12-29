@@ -2,9 +2,10 @@
 
     #define radioSetup_h
 
-    // The Libraries was included into this file,
+    // The Libraries was included into this radioSetup.h
+    // header file, instead of the radioSetup.cpp file
     // because it was the only way I found to extern the
-    // "radio" instance of the Library RF24 bellow.
+    // "RF24 radio" instance of the Library RF24 bellow.
 
     #include <Arduino.h>        // Main Arduino Library
     #include "pinMap.h"         // Pin Map Setup
